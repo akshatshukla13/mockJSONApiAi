@@ -25,7 +25,7 @@ function App() {
 
     try {
       // Send the request to create the endpoint
-      const createRes = await fetch('http://localhost:3000/create/', {
+      const createRes = await fetch('https://json-api-ai-kappa.vercel.app/create/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ function App() {
 
       // Extract the key from the response and create the endpoint URL
       const key = data.data.key;
-      const apiUrl = `http://localhost:3000/api/${key}`;
+      const apiUrl = `https://json-api-ai-kappa.vercel.app/api/${key}`;
 
       setResponse(apiUrl); // Save the URL to state
     } catch (err) {
