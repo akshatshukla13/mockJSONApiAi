@@ -25,7 +25,7 @@ function App() {
 
     try {
       // Send the request to create the endpoint
-      const createRes = await fetch('http://localhost:3000/', {
+      const createRes = await fetch('http://localhost:3000/create/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
