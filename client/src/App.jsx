@@ -3,7 +3,7 @@ import { Send, Database, ArrowRight, MessageSquare, Copy, CopyCheck } from 'luci
 
 function App() {
   const [endpoint, setEndpoint] = useState({
-    prompt: '5 usa states object 3 value each',
+    prompt: '',
   });
   const [response, setResponse] = useState(null);
   const [loading, setLoading] = useState(false);
