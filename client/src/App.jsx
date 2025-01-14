@@ -11,7 +11,7 @@ function App() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = (key) => {
-    navigator.clipboard.writeText(`https://json-api-ai-kappa.vercel.app/api/api/${key}`);
+    navigator.clipboard.writeText(`https://json-api-ai-kappa.vercel.app/api/${key}`);
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
