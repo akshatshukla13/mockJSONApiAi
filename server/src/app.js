@@ -9,7 +9,7 @@ const app = express();
 app.use(cookieParser());
 app.use(express.json());
 app.use(cors({
-  origin: 'https://fake-api-three-theta.vercel.app/'
+  origin: 'https://fake-api-three-theta.vercel.app'
 }));
 
 app.post("/create/", createData);
