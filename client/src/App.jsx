@@ -62,13 +62,13 @@ function App() {
             <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
               JSON Endpoint Generator
             </h1>
-            <p className="text-gray-400 text-sm md:text-base">Create dynamic JSON endpoints with AI-powered responses</p>
+            <p className="text-gray-400 text-sm md:text-base">This website allows you to generate dynamic JSON endpoints using AI-powered responses. Simply enter a prompt, and We will create a unique endpoint with mock JSON for you.</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6 bg-gray-800/50 p-4 md:p-8 rounded-xl backdrop-blur-sm border border-gray-700/50">
             <div>
               <label className="block text-sm font-medium text-gray-300 mb-2">
-                Endpoint Prompt
+                Enter Prompt
               </label>
               <div className="relative">
                 <input
@@ -76,7 +76,8 @@ function App() {
                   value={endpoint.prompt}
                   onChange={(e) => setEndpoint({ ...endpoint, prompt: e.target.value })}
                   className="w-full bg-gray-900/50 border border-gray-700 rounded-lg py-2 pl-4 pr-10 text-white focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                  placeholder="Enter a prompt (e.g., '5 usa states object 3 value each')"
+                  placeholder="eg, '5 usa states object 3 value each"
+                  required
                 />
                 <Database className="absolute right-3 top-2.5 text-gray-500 h-5 w-5" />
               </div>
