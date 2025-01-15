@@ -8,14 +8,16 @@ const app = express();
 
 app.use(cookieParser());
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://fake-api-three-theta.vercel.app/'
+}));
 
 app.post("/create/", createData);
 
 app.get("/api/:key", serveData);
 
 app.get("/", (req, res) => {
-  res.send("Hello, World!");
+  res.redirect("https://fake-api-three-theta.vercel.app/");
 });
 
 export { app };
