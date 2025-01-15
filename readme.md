@@ -6,8 +6,6 @@ This project is a mock JSON API designed to help developers test their applicati
 
 - Create mock data
 - Read mock data
-- Update mock data
-- Delete mock data
 - Easy-to-use interface
 
 # Setup
