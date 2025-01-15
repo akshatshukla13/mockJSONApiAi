@@ -2,6 +2,9 @@
 
 This project is a mock JSON API designed to help developers test their applications. It provides a simple and easy-to-use interface for creating and reading mock data using prompts.
 
+**Test it here:**
+    Open the deployed application at [json-api-ai-kappa.vercel.app](https://json-api-ai-kappa.vercel.app)
+
 ## Features
 
 - Create mock data
