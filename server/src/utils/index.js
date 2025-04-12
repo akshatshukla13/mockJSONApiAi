@@ -24,4 +24,4 @@ export async function fetchImages(query) {
     }
 }
 
-fetchSimilarProducts("cat")
+// fetchSimilarProducts("cat")
