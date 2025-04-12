@@ -7,7 +7,9 @@ export const createData = async (req, res) => {
     return res.status(400).json({ error: "Prompt is required" });
   }
 
-  const result = await getData(prompt);
+  const imagesThatCanBeUsed = await fetchImages(prompt);
+
+  const result = await getData(prompt,imagesThatCanBeUsed);
   console.log(result);
 
   const key = Math.random().toString(36).slice(2) + Date.now().toString(36);
