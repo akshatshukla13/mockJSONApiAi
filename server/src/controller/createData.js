@@ -1,5 +1,6 @@
 import { model } from "../model/model.js";
 import { getData } from "../utils/gemini.js";
+import { fetchImages } from "../utils/index.js";
 
 export const createData = async (req, res) => {
   const { prompt } = req.body;

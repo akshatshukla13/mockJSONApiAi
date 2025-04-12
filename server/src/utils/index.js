@@ -1,4 +1,4 @@
-async function fetchImages(query) {
+export async function fetchImages(query) {
     try {
         const response = await fetch(
             `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${SEARCH_ENGINE_ID}&q=${query}&searchType=image&num=10`
